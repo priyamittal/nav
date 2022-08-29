@@ -1,11 +1,9 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+App {
+   width: 100%;
+   display: flex;
+   justify-content: top;
+   align-items: left;
+ }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +33,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+table {
+  width: 800px;
+  margin: 3%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-bottom: none !important;
+  border-collapse: collapse;
+}
+
+th {
+  width: 200px;
+}
+
+td {
+  text-align: left;
+  width: 200px;
+  vertical-align: top;
+
+}
+.breakword {
+  word-break: break-word;
+}
+.jobTitle {
+    display: inline-block;
+      width: 500px !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+      border-left: none !important;
+      border-right: none !important;
 }
