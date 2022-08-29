@@ -27,7 +27,6 @@ const dummyAds = [
 ];
 
 test("ads list", async () => {
-axios.get.mockResolvedValue({ data: dummyAds });
 render(<App />);
 
 const adList = await waitFor(() => screen.findAllByTestId("ad"));
